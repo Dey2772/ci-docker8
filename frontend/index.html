@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Frontend</title></head>
+<body>
+  <h1>Hola desde el Frontend</h1>
+  <button onclick="getData()">Consultar API</button>
+  <p id="output"></p>
+
+  <script>
+    function getData() {
+      fetch('/api/data')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("output").innerText = data.message;
+        });
+    }
+  </script>
+</body>
+</html>
