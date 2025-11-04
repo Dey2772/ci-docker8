@@ -31,12 +31,15 @@
   </style>
 </head>
 <body>
-
+  
   <h1>tomate-sabio</h1>
+  </div>
 
-  <p><button onclick="getData()">Consultar API</button></p>
+  <div>
+  <button onclick="getData()">Consultar API</button>
   <p id="output"></p>
-
+  </div>
+  
   <script>
     function getData() {
       fetch('/api/data')
